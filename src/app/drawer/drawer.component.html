@@ -1,11 +1,29 @@
-
-<div class="flex h-screen bg-[#171717]">
-   <div class="flex w-full   justify-between ">
-    <div class="relative ml-3 mt-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg">
-      <img class="absolute h-6 w-6 top-1.5 left-1.5 " src="assets/sidebar.svg" alt="">
-    </div>
-   <div class="relative ml-3 mt-3 mr-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg">
-      <i class="fa-solid  fa-pen-to-square absolute text-[#B4B4B4] fa-lg top-2.5 left-2 mt-2"></i>
+<div class="text-center">
+   <div class="flex w-full  mb-4">
+      <div class="relative ml-3 mt-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer">
+         <img class="absolute h-6 w-6 top-1.5 left-1.5" (click)="toggleDrawer()" src="assets/sidebar.svg" alt="">
+      </div>
+      <div class="relative ml-3 mt-3 mr-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer">
+         <i class="fa-solid  fa-pen-to-square absolute text-[#B4B4B4] fa-lg top-2.5 left-2 mt-2"></i>
+      </div>
    </div>
+</div>
+
+<!-- drawer component -->
+<div id="drawer-disabled-backdrop" [ngClass]="{'-translate-x-full': !isDrawerOpen, 'translate-x-0': isDrawerOpen}"
+   class="flex flex-col fixed  top-0 left-0  h-screen   transition-transform bg-[#171717] w-1/6" tabindex="-1"
+   aria-labelledby="drawer-disabled-backdrop-label">
+   <div class="flex w-full justify-between mb-4">
+      <div class="relative ml-3 mt-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer">
+         <img class="absolute h-6 w-6 top-1.5 left-1.5" (click)="closeDrawer()" src="assets/sidebar.svg" alt="">
+      </div>
+      <div class="relative ml-3 mt-3 mr-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer">
+         <i class="fa-solid  fa-pen-to-square absolute text-[#B4B4B4] fa-lg top-2.5 left-2 mt-2"></i>
+      </div>
+   </div>
+   <div class="flex items-center">
+      <img class="h-4 w-4 ml-5" src="assets/chatGPT.svg" alt="">
+      <p class="text-white ml-3 text-sm">ChatBOT</p>
+      <p></p>
    </div>
 </div>
