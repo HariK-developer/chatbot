@@ -2,29 +2,48 @@
     <div class="w-1/6">
         <drawer></drawer>
     </div>
-    <div class="w-5/6 h-screen">
-        <div class="flex justify-between p-2 text-gray-400 text-lg ">
-            <div class="flex items-center hover:bg-sky-700 hover:rounded-lg">
-                <p class="p-2">ChatBOT</p>
-                <i class="fa-solid fa-chevron-down fa-2xs mr-1"></i>
+    <div class="flex flex-col w-5/6">
+        <div class="flex basis-1/3 justify-between p-2  text-lg ">
+            <div class="hover:bg-[#2F2F2F] w-28 h-10 hover:rounded-lg">
+                <p class="p-2 text-[#B4B4B4] font-medium">ChatBOT <span><i
+                            class="fa-solid fa-chevron-down fa-2xs  text-[#B4B4B4]"></i></span></p>
             </div>
-            <div >H</div>
-        </div>
-        <div class="flex flex-col items-center text-white">
-            <div>
-                <img class="h-10 w-10" src="assets/chatGPT.svg" alt="" />
-            </div>
-            <div class="flex">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
+            <div class=" text-white  h-9 w-9 bg-[#01579B] rounded-full mr-2 mt-2">
+                <p class="text-white text-center mt-1">H</p>
             </div>
         </div>
-        <div class="flex text-white items-center">
-            <div class="flex">
-                <input type="text" placeholder="Type a message..." />
-                <button>Send</button>
+        <div class="flex basis-2/3 flex-col items-center">
+            <div class="mb-12">
+                <img class="h-12 w-12" src="assets/chatGPT.svg" alt="" />
+            </div>
+            <div class="flex gap-x-4 ">
+                <div class="w-40 h-32 p-2  rounded-xl border border-[#2F2F2F] hover:bg-[#2F2F2F]">
+                    <i class="fa-solid fa-image text-[#76D0EB]"></i>
+                    <p class="text-[#B4B4B4] mt-1">Create a Renaissance - style painting</p>
+                </div>
+                <div class="w-40 h-32  p-2  rounded-xl border border-[#2F2F2F] hover:bg-[#2F2F2F]">
+                    <i class="fa-solid fa-graduation-cap text-[#76D0EB]"></i>
+                    <p class="text-[#B4B4B4] mt-1">Super heo shark story</p>
+                </div>
+                <div class="w-40 h-32 p-2 rounded-xl border border-[#2F2F2F] hover:bg-[#2F2F2F]">
+                    <i class="fa-regular fa-lightbulb text-[#E2C541]"></i>
+                    <p class="text-[#B4B4B4] mt-1">Activities to make friends in new city</p>
+                </div>
+                <div class="w-40 h-32 p-2 rounded-xl border border-[#2F2F2F] hover:bg-[#2F2F2F]">
+                    <i class="fa-solid fa-pen-to-square text-[#CB8BD0]"></i>
+                    <p class="text-[#B4B4B4] mt-1">Experience seoul like a local</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col text-white items-center mb-8 ">
+            <div class="flex items-center p-2 w-2/3 h-[50px] bg-white rounded-3xl bg-[#2F2F2F] ">
+                <i class="fa-solid fa-paperclip"></i>
+                <input
+                    class="w-full bg-transparent border border-none focus:ring-0 focus:border-transparent placeholder-[#B4B4B4]"
+                    type="text" placeholder="Message ChatBOT" />
+                <div class="h-8 w-8 rounded-full bg-[#676767]">
+                    <i class="fa-solid fa-arrow-up text-gray-800 "></i>
+                </div>
             </div>
         </div>
     </div>
