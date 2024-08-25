@@ -61,15 +61,15 @@
                 <p class="text-white text-center mt-1 cursor-pointer">H</p>
             </div>
         </div>
-        <div class="flex basis-2/3 flex-col  items-end ">
-            <div class="mr-48 h-8 w-auto pl-2 pr-2 rounded-3xl bg-[#2F2F2F] text-center">
+        <div class="flex basis-2/3 flex-col relative">
+            <div class="h-8 w-auto pl-2 pr-2 rounded-3xl bg-[#2F2F2F] text-center absolute top-2 right-56 ">
                 <p class="text-white text-base">{{text}}</p>
             </div>
             <p class="h-8"></p>
-            <div class="mr-auto ml-52  h-8 w-auto rounded-3xl  text-center">
+            <div class="flex h-auto w-8/12 rounded-3xl items-center  text-center absolute top-20 left-52">
+                <img class="h-7 w-7" src="assets/chatGPT.svg" alt="">
                 <div class="flex items-center"> 
-                    <img class="h-7 w-7" src="assets/chatGPT.svg" alt="">
-                    <p class=" ml-4 text-white text-base">{{response_text}}</p>
+                    <p class="ml-4 text-white text-base p-2 bg-[#2F2F2F] rounded-3xl">{{response_text}}</p>
                 </div>
             </div>
         </div>

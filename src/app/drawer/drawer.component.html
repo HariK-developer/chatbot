@@ -3,8 +3,8 @@
       <div class="relative ml-3 mt-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer">
          <img class="absolute h-6 w-6 top-1.5 left-1.5" (click)="toggleDrawer()" src="assets/sidebar.svg" alt="">
       </div>
-      <div class="relative ml-3 mt-3 mr-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer">
-         <i class="fa-solid  fa-pen-to-square absolute text-[#B4B4B4] fa-lg top-2.5 left-2 mt-2"></i>
+      <div class="relative ml-3 mt-3 mr-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer" >
+         <i class="fa-solid  fa-pen-to-square absolute text-[#B4B4B4] fa-lg top-2.5 left-2 mt-2" ></i>
       </div>
    </div>
 </div>
@@ -17,7 +17,7 @@
       <div class="relative ml-3 mt-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer">
          <img class="absolute h-6 w-6 top-1.5 left-1.5" (click)="closeDrawer()" src="assets/sidebar.svg" alt="">
       </div>
-      <div class="relative ml-3 mt-3 mr-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer">
+      <div class="relative ml-3 mt-3 mr-3 h-9 w-9 hover:bg-[#2F2F2F] rounded-lg cursor-pointer" (click)="reloadCurrentRoute()">
          <i class="fa-solid  fa-pen-to-square absolute text-[#B4B4B4] fa-lg top-2.5 left-2 mt-2"></i>
       </div>
    </div>
@@ -27,6 +27,6 @@
    </div>
    <div>
       <p class="ml-5 mt-12 text-white text-xs font-semibold">{{today! ? '' : 'Today'}}</p>
-      <p class="ml-5 mt-5 text-white text-base font-light">{{today! ? '' : 'New chat'}}</p>
+      <p class="ml-5 mt-5 text-white text-base font-light cursor-pointer">{{today! ? '' : 'Hero shark story'}}</p>
    </div>
 </div>
