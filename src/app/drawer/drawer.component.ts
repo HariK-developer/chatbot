@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 
@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
  
 })
 export class DrawerComponent {
+  @Input() today: boolean | undefined;
   isDrawerOpen = true;
 
   toggleDrawer() {
